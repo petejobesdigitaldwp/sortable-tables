@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<title>Accessible sortable table</title>
+
+<link rel="stylesheet" type="text/css" href="css/basic.css" />
+<link rel="stylesheet" type="text/css" href="css/sortable-table.css">
+</head>
+
+<body>
+<h1>Accessible sortable table</h1>
+
+<p>A simple and accessible sortable tables script. Code and information available from <a 
+href="https://github.com/ljwatson/sortable-table">github.com/ljwatson/sortable-table</a></p>
+
+<table class="sortable">
+<thead>
+
+<tr>
+<th class="sortable-column">
+<span class="th-content">Number <i class="arrow"></i></span></span>
+</th>
+
+<th class="sortable-column" data-sortby="text">
+<span class="th-content">Text <i class="arrow"></i></span></span>
+</th>
+
+<th class="sortable-column" data-sortby="date">
+<span class="th-content">Date <i class="arrow"></i></span></span>
+</th>
+
+<th class="sortable-column" data-sortby="money">
+<span class="th-content">Money <i class="arrow"></i></span></span>
+</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td scope="row">3</td>
+<td>Cherries</td>
+<td>01-01-2000</td>
+<td>£50</td>
+</tr>
+
+<tr>
+<td scope="row">1</td>
+<td>Bananas</td>
+<td>12-12-1950</td>
+<td>£100</td>
+</tr>
+
+<tr>
+<td scope="row">2</td>
+<td>Apples</td>
+<td>06-06-1975</td>
+<td>£25,000</td>
+</tr>
+</tbody>
+<table>
+
+<div id="live" class="visuallyhidden" aria-live="polite"></div>
+<script src="js/sortable-table.js"></script>
+
+</body>
+</html>
